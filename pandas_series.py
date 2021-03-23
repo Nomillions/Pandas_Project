@@ -1,4 +1,5 @@
 import pandas as pd
+import pygame
 
 grades = pd.Series([87, 100, 94])
 print(grades)
