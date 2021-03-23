@@ -21,7 +21,7 @@ print(
 )
 twentyElements = []
 for numbers in range(20):
-    twentyElements.append(random.randrange(1, 101, 1))
+    twentyElements.append(random.randrange(0, 100, 1))
 PDtwentyElements = pd.Series(twentyElements)
 print(PDtwentyElements)
 print(
@@ -43,7 +43,5 @@ temperatures = pd.Series(
 )
 print(temperatures)
 print()
-dictionary_temperatures = pd.Series(
-    {"Julie": 98.6, "Charlie": 98.9, "Sam": 100.2, "Andrea": 97.9}
-)
-print(dictionary_temperatures)
+dictionary = pd.Series({"Julie": 98.6, "Charlie": 98.9, "Sam": 100.2, "Andrea": 97.9})
+print("Dictionary Series \n", dictionary, sep="")
